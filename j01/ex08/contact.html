@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<htlm>
+    <head>
+        <meta charset="utf-8" />
+        <title>Contact</title> <!-- titre de la page-->
+    </head>
+    <body>
+        <header> 
+            <h1>Welcome to my portfolio</h1>
+        </header>
+        <nav>
+            <ol>
+                <li><a href="./index.html">INDEX</a></li>
+                <li><a href="./php.html">PHP</a></li>
+                <li><a href="./sql.html">SQL</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+            </ol>
+        </nav>
+        <section>
+            <form method="POST">
+                <label for="nom">Nom*</label>
+                <input type="text" name="nom" id="nom" required>
+                <label for="prenom">Prénom*</label>
+                <input type="text" name="prenom" id="prenom" required><br/>
+                <label for="mail">Email*</label>
+                <input type="email" name="mail" id="mail" required><br/>
+                <label for="age">Age</label>
+                <input type="number" min="3" max="99" name="age" id="age"><br/>
+                <label for="telephone">Téléphone</label>
+                <input type="tel" name="telephone" pattern="[0-9]{10}" maxlength="10" id="telephone"><br/>
+                <label for="homme">Homme</label>
+                <input type="radio" name="sexe" value="homme" id="homme">&emsp;
+                <label for="femme">Femme</label>
+                <input type="radio" name="sexe" value="femme" id="femme"><br/>
+                <label for="couleur">Couleur Préférée</label>
+                <input type="color" name="couleur" id="couleur"><br/>
+                <label for="date">Date*</label>
+                <input type="date" name="date" id="date" required>
+                <label for="tech">Technologie</label>
+                <select name="tech" id="tech">
+                    <option value="PHP">PHP</option>
+                    <option value="SQL">SQL</option>
+                </select><br/>
+                <label for="quest">Question*</label><br/>
+                <textarea name="quest" id="quest" required></textarea><br/>
+                <input type="submit" value="Soumettre"><br/><br/>
+            </form>
+        </section>
+        <aside>
+        </aside>
+        <footer>
+            <address>
+                Julien Bardin - 8 rue du clos,94450 Limeil-Brevannes - 06.13.51.53.51
+            </address>
+        </footer>  
+    </body>
+</html>
