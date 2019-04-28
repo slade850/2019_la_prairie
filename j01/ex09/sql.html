@@ -4,6 +4,12 @@
     <head>
         <meta charset="utf-8" />
         <title>SQL</title> <!-- titre de la page-->
+        <!-- ajout de css pour les bordures du tableau --> 
+        <style>
+            table {border-collapse: collapse;}
+            th {border: solid 2px;}
+            td {border: solid 1px;}
+        </style>
     </head>
     <body>
         <header></header>
@@ -37,12 +43,21 @@
                     </thead>
                     <tbody><!-- corps du tableau -->
                         <tr>
-                            
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><!-- ajout d'une liste dans la quatrième colonne -->
+                                <ul>
+                                    <li>JavaScript</li>
+                                    <li>PHP</li>
+                                    <li>SQL</li>
+                                </ul>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
             </article>
-            <article><!-- article 3 -->
+            <article><!-- article 3-->
                 <ul>
                     <li>SQL est un langage declaratif</li>
                     <li>il permet de gérer des bases de données</li>
@@ -51,11 +66,14 @@
             </article>
             <article><!-- article 4 -->
                 <p>Exemple de SQL:</p>
-                    <pre><code>
+                    <pre><code><!-- pre pour garder le formatage du text et code pour specifier qu'il s'agit de ligne de code -->
                             CREATE TABLE films (idFilm INT not null AUTO_INCREMENT, Titre VARCHAR (255) not null ,
                             Réalisateur VARCHAR (255) not null , PRIMARY KEY (idFilm))
                         </code>
                     </pre> 
+            </article>
+            <article><!-- article 5 pour la barre de progression --> 
+                <progress value="5" max="100"></progress><!-- barre de progression -->
             </article>
         </section>
         <aside><!-- info complementaire -->
